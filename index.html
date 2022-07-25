@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+    <header>
+      <h1 id="title">Company's Canteen Survey Form</h1> 
+       <p id="description">Help us to be better</p>
+    </header>
+     
+     <main>
+      
+      <div class="form-background">
+
+       <label for="name" id="name-label">Name:</label><br>
+       <input type="text" id="name" placeholder="Type your name" value="" required><br>
+       <label for="email" id="email-label">Email:</label><br>
+       <input type="email" id="email" placeholder="Type your email" value="" required><br>
+       <label for="number" id="number-label">Age (optional):</label><br>
+       <input type="number" id="number" min="18" max="99" placeholder="Choose your age" value=""><br>
+      
+     <p>Which meal did you have in our canteen?</p>
+     <label for="dropdown">
+       <select id="dropdown" name="choise">
+       <option value="Menu1"> Menu 1</option>
+       <option value="Menu2"> Menu 2</option>
+       <option value="Menu3"> Menu 3</option>
+       <option value="Menu4"> Menu 4</option>
+       </label>
+     </select>
+     
+     <p>Did you like it?</p>
+     <input type="radio" id="yes" name="feedback" value="yes" checked>
+     <label for="yes">Yes</label><br>
+     <input type="radio" id="no" name="feedback" value="no">
+     <label for="no">No</label><br>
+     <input type="radio" id="maybe" name="feedback" value="maybe">
+     <label for="maybe">I'm not sure</label><br>
+     
+     <p>What did you dislike about the meal?</p>
+     <input type="checkbox" id="issue" name="issue" value="temperature">
+     <label for="temperature"> High/low temperature</label><br>
+     <input type="checkbox" id="issue" name="issue" value="spicy">
+     <label for="spicy"> So much spices</label><br>
+     <input type="checkbox" id="issue" name="issue" value="oily">
+     <label for="oily"> So much oily</label><br>
+     <input type="checkbox" id="issue" name="issue" value="ingredients">
+     <label for="ingredients"> Low-quality ingredients</label><br>
+     <input type="checkbox" id="issue" name="issue" value="fresh">
+     <label for="fresh"> The meal wasn't fresh</label><br>
+     <input type="checkbox" id="issue" name="issue" value="taste">
+     <label for="taste"> The meal wasn't tasty for me</label><br>  
+       
+     <p>Your comment:</p><br>
+     <textarea name="comment" id="comment" placeholder="Enter your comment here..."></textarea><br>
+     
+     <input type="submit" id="submit">
+       
+       
+       </form>
+      </div>
+     
+     </main>
+</body>
+</html>
